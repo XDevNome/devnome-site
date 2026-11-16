@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DevNome: Software Company for Desktop, Web and Cloud</title>
+<meta name="description" content="DevNome is a software company. We design, build and ship software: desktop applications for Windows and macOS, web and cloud platforms, integrations and product design. Makers of Torrio.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://devnome.com/">
+<meta name="author" content="DevNome PVT LTD">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DevNome">
+<meta property="og:url" content="https://devnome.com/">
+<meta property="og:title" content="DevNome: software that ships, and keeps working">
+<meta property="og:description" content="Desktop apps, web and cloud platforms, integrations and product design, from first sketch to signed release. Makers of Torrio.">
+<meta property="og:image" content="https://devnome.com/assets/brand/og-image.jpg">
+<meta name="theme-color" content="#08080c">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DevNome PVT LTD",
+  "alternateName": "DevNome",
+  "url": "https://devnome.com/",
+  "logo": "https://devnome.com/assets/brand/devnome-logo-full.png",
+  "description": "Software company: desktop applications, web and cloud platforms, integrations and product design. Makers of Torrio.",
+  "sameAs": ["https://github.com/XDevNome", "https://torrio.devnome.com/"],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Desktop application development" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Web and cloud development" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Integrations and browser extensions" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Product and interface design" } }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ============ floating navigation ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="DevNome, back to top">
+    <img class="mark" src="assets/brand/devnome-mark.svg" alt="" width="34" height="29">
+    <span>Dev<em>Nome</em></span>
+  </a>
+  <nav aria-label="Main">
+    <a href="#services">Services</a>
+    <a href="#approach">Approach</a>
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+  </nav>
+  <a class="nav-cta" data-contact href="https://github.com/XDevNome" target="_blank" rel="noopener">Start a project</a>
+</header>
+
+<!-- scroll-to-top with a ring that fills as you scroll -->
+<a class="dot" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" class="ring-bg"/><circle cx="22" cy="22" r="20" class="ring" id="ring"/></svg>
+  <img src="assets/brand/devnome-mark.svg" alt="" width="22" height="19">
+</a>
+
+<main id="top">
+
+  <!-- ============ 1. hero: a panel that shrinks into a card as you scroll ============ -->
+  <section class="pin hero-pin light" data-pin="hero" style="--h: 165vh" data-theme="dark-top">
+    <div class="sticky">
+      <div class="hero-panel" id="heroPanel">
+        <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+        <div class="grain"></div>
+        <div class="hero-copy" id="heroCopy">
+          <span class="kicker">Software company</span>
+          <h1>Software that ships,<br><span class="dim">and keeps working.</span></h1>
+          <p>DevNome designs and builds desktop applications, web and cloud platforms, and the integrations between them, from the first sketch to a signed release that updates itself.</p>
+          <div class="cta">
+            <a class="btn light" data-contact href="https://github.com/XDevNome" target="_blank" rel="noopener">Start a project <span aria-hidden="true">→</span></a>
+            <a class="btn glass" href="#work">See our work</a>
+          </div>
+        </div>
+        <div class="cluster" id="cluster" aria-hidden="true">
+        <!-- code that ships -->
+        <div class="code-card">
+          <div class="cc-top"><i></i><i></i><i></i><span>release.rs</span></div>
+<pre><span class="k">fn</span> <span class="f">ship</span>(app: &amp;<span class="t">App</span>) -&gt; <span class="t">Release</span> {
+    <span class="k">let</span> build = app.<span class="f">build</span>().<span class="f">signed</span>();
+    build.<span class="f">test</span>()?;
+    <span class="t">Release</span>::<span class="f">to</span>(everyone, build)
+}</pre>
+        </div>
+        <!-- platforms -->
+        <div class="chips"><span>Windows</span><span>macOS</span><span>Web</span><span>Cloud</span></div>
+        <!-- a product of ours -->
+        <a class="mini" href="https://torrio.devnome.com/" target="_blank" rel="noopener" tabindex="-1"><img src="assets/work/logo-256.png" alt="" width="34" height="34"><span><b>Torrio</b><em>32 connections per file</em></span></a>
+        <!-- a live "release" card -->
+        <div class="release-card" id="releaseCard">
+          <div class="rc-top"><span><i class="spark">✦</i> Release 1.0</span><span class="live">● LIVE</span></div>
+          <div class="rc-orb"></div>
+          <ul class="rc-steps">
+            <li class="ok"><span>Design</span><em>done</em></li>
+            <li class="ok"><span>Build</span><em>done</em></li>
+            <li class="ok"><span>Test</span><em>done</em></li>
+            <li class="run"><span>Ship</span><em>signing…</em></li>
+          </ul>
+          <div class="rc-bar"><i></i></div>
+          <div class="rc-foot">Signed update · ready for everyone</div>
+        </div>
+        </div>
+        <div class="hero-bottom" id="heroBottom">
+          <div class="we-build"><span>We build</span><b>Desktop apps</b><b>Web platforms</b><b>Cloud integrations</b><b>Browser extensions</b><b>Product design</b></div>
+          <div class="scroll-cue"><i></i>Scroll</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. services: giant words slide past while 3D cards cross the screen ============ -->
+  <section class="pin services-pin light" id="services" data-pin="services" style="--h: 300vh" data-theme="light">
+    <div class="sticky">
+      <div class="marquee" id="marquee" aria-hidden="true">Design · Build · Ship · Design · Build · Ship ·</div>
+      <div class="sec-head"><span class="label">01 · Services</span><h2>What we do</h2></div>
+      <div class="cards3d" id="cards3d">
+        <article class="c3" style="--g1:#6d5dfc;--g2:#22d3ee">
+          <div class="c3-art"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <span class="c3-num">01 · Desktop</span>
+          <h3>Desktop applications</h3>
+          <p>Fast native apps for Windows and macOS, with installers, tray integration and signed updates that install themselves.</p>
+        </article>
+        <article class="c3" style="--g1:#0ea5e9;--g2:#a78bfa">
+          <div class="c3-art"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div>
+          <span class="c3-num">02 · Web</span>
+          <h3>Web and cloud</h3>
+          <p>Websites, web apps and APIs that load fast, rank well and connect to the services your team already uses.</p>
+        </article>
+        <article class="c3" style="--g1:#10b981;--g2:#3b82f6">
+          <div class="c3-art"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007 0l3-3a5 5 0 00-7-7l-1 1"/><path d="M14 11a5 5 0 00-7 0l-3 3a5 5 0 007 7l1-1"/></svg></div>
+          <span class="c3-num">03 · Integrations</span>
+          <h3>Integrations</h3>
+          <p>OneDrive, Google Drive and other cloud APIs, browser extensions, and the glue that makes separate tools feel like one.</p>
+        </article>
+        <article class="c3" style="--g1:#f472b6;--g2:#8b5cf6">
+          <div class="c3-art"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5z"/></svg></div>
+          <span class="c3-num">04 · Design</span>
+          <h3>Product and interface design</h3>
+          <p>Interfaces people understand at first sight, from the first sketch to the finished pixels and the website that sells them.</p>
+        </article>
+        <article class="c3" style="--g1:#f59e0b;--g2:#ef4444">
+          <div class="c3-art"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <span class="c3-num">05 · Care</span>
+          <h3>Releases and care</h3>
+          <p>Signed builds, automatic updates, store listings and steady fixes after launch, so the software keeps working.</p>
+        </article>
+      </div>
+      <a class="btn light services-cta" data-contact href="https://github.com/XDevNome" target="_blank" rel="noopener">Talk about your project</a>
+    </div>
+  </section>
+
+  <!-- ============ 3. approach: two phrases part around a glowing star, then the numbers ============ -->
+  <section class="pin approach-pin dark" id="approach" data-pin="approach" style="--h: 200vh" data-theme="dark">
+    <div class="sticky">
+      <div class="sec-head"><span class="label">02 · Approach</span></div>
+      <h2 class="big-word w1" id="w1">From idea</h2>
+      <h2 class="big-word w2" id="w2">to release</h2>
+      <div class="star-wrap" id="starWrap" aria-hidden="true">
+        <svg class="star" viewBox="0 0 100 100"><defs><radialGradient id="sg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#e9e6ff"/><stop offset="1" stop-color="#b9b2ff"/></radialGradient></defs><path d="M50 2 C54 34 66 46 98 50 C66 54 54 66 50 98 C46 66 34 54 2 50 C34 46 46 34 50 2Z" fill="url(#sg)"/></svg>
+      </div>
+      <div class="approach-text" id="approachText">
+        <p><b>One small team, start to finish.</b> The people who design your software also write it, test it, sign it and support it. Nothing gets lost between hand-offs.</p>
+        <p>We build lean: native where it matters, web where it reaches further, and nothing your users have to wait for.</p>
+      </div>
+      <dl class="stats" id="stats">
+        <div><dt>6</dt><dd>products and add-ons shipped</dd></div>
+        <div><dt>32</dt><dd>connections per file in Torrio</dd></div>
+        <div><dt>0</dt><dd>ads or trackers in our apps</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ 4. selected work: scroll down, the row moves sideways ============ -->
+  <section class="pin work-pin dark" id="work" data-pin="work" style="--h: 320vh" data-theme="dark">
+    <div class="sticky">
+      <div class="sec-head row"><div><span class="label">03 · Work</span><h2>Selected work</h2></div><span class="label count" id="workCount">01 / 06</span></div>
+      <div class="work-track" id="workTrack">
+        <a class="wk" href="https://torrio.devnome.com/" target="_blank" rel="noopener" style="--g1:#8b3dff;--g2:#19d9ff">
+          <div class="wk-top"><span>01 · Torrio</span><span>2026</span></div>
+          <img src="assets/work/screen-downloads.jpg" alt="Torrio download manager: downloads with progress and a details panel" loading="lazy">
+          <div class="wk-foot"><h3>Torrio</h3><p>Download manager · Windows · Rust</p><span class="view">View project →</span></div>
+        </a>
+        <a class="wk" href="https://torrio.devnome.com/player/" target="_blank" rel="noopener" style="--g1:#19beff;--g2:#2f5bff">
+          <div class="wk-top"><span>02 · Torrio Player</span><span>2026</span></div>
+          <img src="assets/work/screen-player.jpg" alt="Torrio Player playing a 4K video" loading="lazy">
+          <div class="wk-foot"><h3>Torrio Player</h3><p>Video player · GPU decoding · 4K</p><span class="view">View project →</span></div>
+        </a>
+        <a class="wk" href="https://torrio.devnome.com/music/" target="_blank" rel="noopener" style="--g1:#ff4fd8;--g2:#8b3dff">
+          <div class="wk-top"><span>03 · Torrio Music</span><span>2026</span></div>
+          <img src="assets/work/screen-music.jpg" alt="Torrio Music with a library of songs" loading="lazy">
+          <div class="wk-foot"><h3>Torrio Music</h3><p>Music player · Library · Equaliser</p><span class="view">View project →</span></div>
+        </a>
+        <a class="wk" href="https://torrio.devnome.com/converter/" target="_blank" rel="noopener" style="--g1:#ff6e28;--g2:#ffb020">
+          <div class="wk-top"><span>04 · Torrio Converter</span><span>2026</span></div>
+          <img src="assets/work/screen-converter.jpg" alt="Torrio Converter with format choices" loading="lazy">
+          <div class="wk-foot"><h3>Torrio Converter</h3><p>Video converter · GPU encoding</p><span class="view">View project →</span></div>
+        </a>
+        <a class="wk art" href="https://torrio.devnome.com/" target="_blank" rel="noopener" style="--g1:#22c55e;--g2:#0ea5e9">
+          <div class="wk-top"><span>05 · Torrio Integration</span><span>2026</span></div>
+          <div class="wk-art"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div>
+          <div class="wk-foot"><h3>Torrio Integration</h3><p>Browser extension · Chrome, Edge, Firefox</p><span class="view">View project →</span></div>
+        </a>
+        <a class="wk art" href="https://torrio.devnome.com/onedrive/" target="_blank" rel="noopener" style="--g1:#4696ff;--g2:#28d296">
+          <div class="wk-top"><span>06 · Cloud downloads</span><span>2026</span></div>
+          <div class="wk-art"><svg viewBox="0 0 24 24"><path d="M7 18.5h10.5a4 4 0 00.4-7.98A6 6 0 006.3 9.6 4.5 4.5 0 007 18.5z"/></svg></div>
+          <div class="wk-foot"><h3>Cloud downloads</h3><p>OneDrive integration · Google Drive coming soon</p><span class="view">View project →</span></div>
+        </a>
+        <a class="wk end" href="https://torrio.devnome.com/" target="_blank" rel="noopener">
+          <span>See the full story</span><b>torrio.devnome.com ↗</b>
+        </a>
+      </div>
+      <div class="work-bar"><i id="workBar"></i></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. process: a line draws down as the steps arrive ============ -->
+  <section class="process light" id="process" data-theme="light">
+    <div class="wrap">
+      <div class="sec-head static"><span class="label">04 · Process</span><h2 class="reveal">Four steps, <span class="dim">no surprises.</span></h2></div>
+      <div class="steps" id="steps">
+        <div class="line"><i id="stepLine"></i></div>
+        <div class="step reveal"><span class="n">01</span><div><h3>Discover</h3><p>We learn what you need, who will use it and what "done" looks like, and agree on a plan you can hold us to.</p></div></div>
+        <div class="step reveal"><span class="n">02</span><div><h3>Design</h3><p>Screens and flows you can click through before a line of code, so the important decisions are made early and cheaply.</p></div></div>
+        <div class="step reveal"><span class="n">03</span><div><h3>Build</h3><p>Small, tested releases you can try as we go. You always know where the project stands.</p></div></div>
+        <div class="step reveal"><span class="n">04</span><div><h3>Ship and care</h3><p>Signed installers, automatic updates, store listings and the fixes and improvements that follow.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. tools: tiles fly in from everywhere and settle ============ -->
+  <section class="pin stack-pin dark" data-pin="stack" style="--h: 180vh" data-theme="dark">
+    <div class="sticky">
+      <div class="sec-head"><span class="label">05 · Tools</span></div>
+      <div class="stack-title" id="stackTitle"><h2>Built on tools<br>that last</h2><p>Proven technology, chosen for speed, safety and a long life.</p></div>
+      <div class="tiles" id="tiles">
+        <span>Rust</span><span>Windows</span><span>macOS</span><span>HTML · CSS · JS</span>
+        <span>Browser extensions</span><span>Microsoft Graph</span><span>Google Drive API</span><span>FFmpeg</span>
+        <span>GPU video</span><span>Signed updates</span><span>Installers</span><span>Native UI</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7. call to action ============ -->
+  <section class="final light" id="contact" data-theme="light">
+    <div class="final-panel reveal">
+      <div class="blob b1"></div><div class="blob b2"></div>
+      <div class="final-copy">
+        <h2>Have something<br><span class="dim">to build?</span></h2>
+        <p>Tell us about it. We'll reply with honest advice, a plan and a price, even if the answer is that you don't need us.</p>
+        <div class="cta">
+          <a class="btn light" data-contact href="https://github.com/XDevNome" target="_blank" rel="noopener">Start a project <span aria-hidden="true">→</span></a>
+          <a class="btn glass" href="https://torrio.devnome.com/" target="_blank" rel="noopener">Try Torrio</a>
+        </div>
+      </div>
+      <div class="chrome" aria-hidden="true">
+        <svg viewBox="0 0 100 100"><defs><linearGradient id="ch" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".35" stop-color="#cfc9ff"/><stop offset=".55" stop-color="#6d5dfc"/><stop offset=".75" stop-color="#e8e4ff"/><stop offset="1" stop-color="#8f86d9"/></linearGradient></defs><path d="M50 4 C55 36 64 45 96 50 C64 55 55 64 50 96 C45 64 36 55 4 50 C36 45 45 36 50 4Z" fill="url(#ch)"/></svg>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot light" data-theme="light">
+  <div class="wrap foot-cols">
+    <div class="foot-about">
+      <a class="brand" href="#top"><img class="mark" src="assets/brand/devnome-mark.svg" alt="" width="34" height="29"><span>Dev<em>Nome</em></span></a>
+      <p>Software company. Desktop apps, web and cloud, integrations and design.</p>
+    </div>
+    <div><h4>Studio</h4><a href="#services">Services</a><a href="#approach">Approach</a><a href="#work">Work</a><a href="#process">Process</a></div>
+    <div><h4>Products</h4><a href="https://torrio.devnome.com/" target="_blank" rel="noopener">Torrio</a><a href="https://torrio.devnome.com/player/" target="_blank" rel="noopener">Torrio Player</a><a href="https://torrio.devnome.com/music/" target="_blank" rel="noopener">Torrio Music</a><a href="https://torrio.devnome.com/converter/" target="_blank" rel="noopener">Torrio Converter</a></div>
+    <div><h4>Company</h4><a data-contact href="https://github.com/XDevNome" target="_blank" rel="noopener">Contact</a><a href="https://github.com/XDevNome" target="_blank" rel="noopener">GitHub</a><a href="https://torrio.devnome.com/privacy/" target="_blank" rel="noopener">Privacy</a></div>
+  </div>
+  <div class="wordmark" aria-hidden="true">Dev<span>Nome</span></div>
+  <div class="wrap legal"><span>© <span id="year">2026</span> DevNome PVT LTD</span><span>Software that ships, and keeps working.</span></div>
+</footer>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>
