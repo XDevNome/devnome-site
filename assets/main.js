@@ -26,7 +26,9 @@
     const c = span(p, 0, 0.55);
     heroCopy.style.opacity = 1 - c * 1.3;
     heroCopy.style.transform = `translateY(${-c * 70}px)`;
-    cluster.style.transform = `translate(${-e * vw * 0.2}px, calc(-50% + ${e * vh * 0.04}px)) scale(${1 + e * 0.12})`;
+    // the cards grow with very wide screens so the hero never looks empty in the middle
+    const base = vw >= 2300 ? 1.38 : vw >= 1800 ? 1.2 : 1;
+    cluster.style.transform = `translate(${-e * Math.min(vw, 1520) * 0.2}px, calc(-50% + ${e * vh * 0.04}px)) scale(${base * (1 + e * 0.12)})`;
     heroBottom.style.opacity = 1 - span(p, 0, 0.3);
     return true;
   }
